@@ -1,4 +1,20 @@
-# GitHub Docs <!-- omit in toc -->
+# Order is important. The LAST matching pattern has the MOST precedence.
+# gitignore style patterns are used, not globs.
+# https://docs.github.com/articles/about-codeowners
+# https://git-scm.com/docs/gitignore
+
+# Site Policy
+/content/site-policy/ @github/site-policy-admins
+
+# Enterprise
+/data/release-notes/**/*.yml @github/docs-content-enterprise
+src/ghes-releases/lib/enterprise-dates.json @github/docs-content-enterprise
+
+# Requires review of #actions-oidc-integration, docs-engineering/issues/1506
+# content/actions/deployment/security-hardening-your-deployments/** @github/oidc
+
+# RAI - CELA
+data/reusables/rai/** @github/legal-product# GitHub Docs <!-- omit in toc -->
 [![Build GitHub Docs On Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/?repo=github)
 
 This repository contains the documentation website code and Markdown source files for [docs.github.com](https://docs.github.com).
